@@ -8,3 +8,10 @@ function nameShuffler(str){
     let result = str.split(' ').reverse().join(' ')
     return result
   }
+
+
+
+// OR
+
+
+const nameShuffler = str => str.split(' ').reverse().join(' ');
