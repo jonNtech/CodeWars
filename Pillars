@@ -9,7 +9,7 @@ Calculate the distance between the first and the last pillar in centimeters (wit
 
 function pillars(num_pill, dist, width) {
    let numDist = dist * 1000
-  if (num_pill <= 1){
+  if (num_pill == 1){
     return 0
   } else if(num_pill === 2){
     return dist * 100
