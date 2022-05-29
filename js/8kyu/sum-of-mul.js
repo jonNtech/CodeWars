@@ -11,4 +11,8 @@ function sumMul(n,m){
     return result.reduce((a,b)=> a+b)
 }
 
+<<<<<<< HEAD
   console.log( sumMul(1,35) )
+=======
+  console.log( sumMul(1,35) )
+>>>>>>> 6d3a444c02edb93ffc52089fa3e992b0e5752d58
