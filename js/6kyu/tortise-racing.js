@@ -8,3 +8,7 @@ function race(v1, v2, g) {
   
   return [h, m, s];
 }
+
+
+
+//OR
