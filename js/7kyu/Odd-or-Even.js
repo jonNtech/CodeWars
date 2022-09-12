@@ -17,6 +17,7 @@
 // Have fun!
 
 function oddOrEven(array) {
+<<<<<<< HEAD
     if (array.length === 0) {
         return 'even'
     }  else  { 
@@ -43,3 +44,12 @@ function oddOrEven(array) {
 //     {return "even";}
 //     else{return "odd";}
 //   }
+=======
+    //enter code here
+ }
+
+
+ console.log(oddOrEven([0]), 'even')
+ console.log(oddOrEven([1]), 'odd')
+ console.log(oddOrEven([]), 'even')
+>>>>>>> 8cf147765cc60f730e83f4d22fd684ba010d0d5f
