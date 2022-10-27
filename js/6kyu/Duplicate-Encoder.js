@@ -11,11 +11,38 @@
 
 
 function duplicateEncode(word){
-    let result = word.toLowerCase().split("").map((x)=> word.indexOf(x)=== word.lastIndexOf(x) ? "(" :")")
+    let result = word.toLowerCase().split("").map((l, ind, arr)=> arr.indexOf(l)=== arr.lastIndexOf(l) ? "(" :")")
     return result.join("")
 }
+
 
 
 // OR
 
 
+function countCharacters(chars) {
+  return chars
+    .reduce( function(memo, char){
+      memo[char] = memo[char] ? memo[char] + 1 : 1;
+      return memo;
+    }, {});
+}
+
+function duplicateEncode(word){
+  const chars = word.split('').map(ch => ch.toLowerCase());
+  const charsCount = countCharacters(chars);
+  return chars
+    .map( ch => charsCount[ch] > 1 ? ')' : '(' )
+    .join('');
+}
+
+
+function duplicateEncode(string){
+   var occurances = string.toLowerCase().split('').reduce(function(occ, cha){
+      occ[cha] = (occ[cha] || 0) + 1;
+      return occ;
+   }, {});
+   return string.toLowerCase().replace(/[\S\s]/g, function(cha){
+      return occurances[cha] > 1 ? ')' : '(';
+   });
+}
