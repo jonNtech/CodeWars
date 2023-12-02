@@ -30,3 +30,11 @@ public class Kata
     return result.ToArray();
   }
 }
+
+
+//using System.Linq;
+//public class Kata
+//{
+ // public static string[] AddLength(string str)
+   // => str.Split(' ').Select(e=> $"{e} {e.Length}").ToArray();
+//}
