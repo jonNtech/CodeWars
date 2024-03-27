@@ -4,6 +4,10 @@ public class Kata
 {
     public static bool Gaslighting(string shirtWord, string yourWord, char[] friendsLetters)
     {
-        return false;
+        if (shirtWord == yourWord)return false;
+        if (shirtWord.Contains(friendsLetters)
+        {
+            var 
+        }
     }
 }
